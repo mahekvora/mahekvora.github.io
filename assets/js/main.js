@@ -27,6 +27,11 @@
       menuBtn.setAttribute('aria-expanded', open);
     });
 
+    // Email is assembled here so the address never appears in the HTML source
+    var email = ['mbvora', 'cs.cmu.edu'].join('@');
+    document.querySelectorAll('.js-email').forEach(function (a) { a.href = 'mailto:' + email; });
+    document.querySelectorAll('.js-email-text').forEach(function (el) { el.textContent = email; });
+
     var year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
   });
