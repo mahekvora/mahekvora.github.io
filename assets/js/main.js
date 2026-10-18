@@ -32,10 +32,6 @@
     document.querySelectorAll('.js-email').forEach(function (a) { a.href = 'mailto:' + email; });
     document.querySelectorAll('.js-email-text').forEach(function (el) { el.textContent = email; });
 
-    var phone = ['+1', '412', '709', '2980'];
-    document.querySelectorAll('.js-phone').forEach(function (a) { a.href = 'tel:' + phone.join(''); });
-    document.querySelectorAll('.js-phone-text').forEach(function (el) { el.textContent = phone[0] + ' ' + phone.slice(1).join('-'); });
-
     var year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
   });
