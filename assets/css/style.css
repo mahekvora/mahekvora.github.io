@@ -165,7 +165,7 @@ strong { font-weight: 600; }
   border-radius: 22px; background: var(--accent-soft); border: 1px solid var(--border);
 }
 
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
 .stat b { display: block; font-family: var(--serif); font-size: 1.6rem; color: var(--accent); font-weight: 600; line-height: 1.2; }
 .stat span { font-size: .9rem; color: var(--muted); }
@@ -278,7 +278,6 @@ details p { margin: 0; padding: 0 1.25rem 1.1rem; color: var(--muted); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .stats { grid-template-columns: repeat(2, 1fr); }
   .honors { grid-template-columns: 1fr; }
   .pub { grid-template-columns: 1fr; }
   .pub-img { border-right: 0; border-bottom: 1px solid var(--border); }
